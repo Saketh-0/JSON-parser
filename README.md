@@ -1,40 +1,24 @@
-C++ JSON Parser
+# C++ JSON Parser
 
+This is a simple JSON parser built in **C++**.  
+It is designed to parse **basic dictionary-style JSON objects** (key-value pairs) from a single line and display the parsed data.
 
-This is a simple JSON parser built with C++. It's designed to read a basic dictionary format (key-value pairs) from a single line and show you the parsed data.
+---
 
-How It Works
-The parser expects a single-line, JSON-like dictionary. The rules are simple:
+##  How It Works
 
-Keys and values must be strings wrapped in double quotes (e.g., "name").
+- The parser expects a **single-line JSON-like dictionary**.  
+- Rules:
+  - Keys and values must be **strings wrapped in double quotes** (`"example"`).
+  - The entire object must be enclosed in **curly braces `{}`**.
+  - Key-value pairs are separated by a **colon `:`**.
+  - Multiple pairs are separated by a **comma `,`**.
 
-The whole thing must be enclosed in curly braces {}.
+###  Example Input
+```json
+{"name":"Alice","age":"25","city":"New York"}
 
-Key-value pairs are separated by a colon :, and different pairs are separated by commas ,.
-
-Example 
-✅ Successful Run
-If you give it valid input, it'll work like this:
-
-Input:
-
-JSON
-
-{"name":"Alice","age":"25","city":"Wonderland"}
-
-Output:
-
-Your Data:
-name: Alice
-age: 25
-city: Wonderland
-
-
-❌ Error Handling
-If the format's wrong (like a missing quote or brace), it'll let you know.
-
-Output:
-
-Error: Invalid JSON format.**
-
-
+# Output
+Key: name, Value: Alice
+Key: age, Value: 25
+Key: city, Value: New York
