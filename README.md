@@ -15,10 +15,9 @@ It is designed to parse **basic dictionary-style JSON objects** (key-value pairs
   - Multiple pairs are separated by a **comma `,`**.
 
 ###  Example Input
-```json
 {"name":"Alice","age":"25","city":"New York"}
 
-# Output
-Key: name, Value: Alice
-Key: age, Value: 25
-Key: city, Value: New York
+### Output
+- Key: name, Value: Alice
+- Key: age, Value: 25
+- Key: city, Value: New York
